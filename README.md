@@ -59,6 +59,18 @@ docker build -t helidon-acme-demo .
 docker run --rm -p 8080:8080 helidon-acme-demo:latest
 ```
 
+## Tag the Docker Image
+
+```
+docker tag helidon-acme-demo:latest shashioracle/helidon-acme-demo:S1
+```
+
+## Push Docker Image to docker hub
+
+```
+docker push shashioracle/helidon-acme-demo:S1
+```
+
 Exercise the application as described above
 
 ## Deploy the application to Kubernetes
