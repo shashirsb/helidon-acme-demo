@@ -16,10 +16,16 @@ java -jar target/helidon-acme-demo.jar
 curl -X GET http://localhost:8080/eshop/status
 
 
-curl -X POST http://localhost:8080/eshop/login
+curl -X POST http://localhost:8080/eshop/login 
+
+JSON body e.g.
+{
+    "username": "test@oracle.com",
+    "password": "test134"
+}
 
 
-curl -X POST http://localhost:8080/eshop/catalog
+curl -X GET http://localhost:8080/eshop/catalog
 ```
 
 ## Try health and metrics
